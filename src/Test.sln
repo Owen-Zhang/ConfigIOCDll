@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{408F3D4A-BF13-469D-B4F5-5D4D809591AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProvider", "TestProvider\TestProvider.csproj", "{F8F84793-70CA-4DDF-ABB4-8D68708798BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDllMain", "TestDllMain\TestDllMain.csproj", "{BDE0577A-8252-4658-82A8-0F484C5B303D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{408F3D4A-BF13-469D-B4F5-5D4D809591AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408F3D4A-BF13-469D-B4F5-5D4D809591AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408F3D4A-BF13-469D-B4F5-5D4D809591AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408F3D4A-BF13-469D-B4F5-5D4D809591AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F84793-70CA-4DDF-ABB4-8D68708798BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F84793-70CA-4DDF-ABB4-8D68708798BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F84793-70CA-4DDF-ABB4-8D68708798BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F84793-70CA-4DDF-ABB4-8D68708798BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE0577A-8252-4658-82A8-0F484C5B303D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE0577A-8252-4658-82A8-0F484C5B303D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE0577A-8252-4658-82A8-0F484C5B303D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE0577A-8252-4658-82A8-0F484C5B303D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
