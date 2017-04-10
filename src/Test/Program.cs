@@ -2,15 +2,9 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using Google;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Content.v2;
-using Google.Apis.Content.v2.Data;
-using Google.Apis.Services;
 
 namespace Test
 {
@@ -136,6 +130,7 @@ namespace Test
             Console.WriteLine(result2.Count());*/
             #endregion
 
+            #region 获取IP和机器名
             /*
             NE.MPS.Framework.Logging.Logger.PortalLog(new NE.MPS.Framework.Logging.PortalLogEntry { 
                  
@@ -152,10 +147,16 @@ namespace Test
             Console.WriteLine(System.Net.Dns.Resolve(System.Net.Dns.GetHostName()).AddressList.First());
             */
 
+            #endregion
+
             TestEnum? en = TestEnum.Third;
             var result = en ?? TestEnum.First;
 
-            //var result2 = (ConfigurationManager.GetSection("TestSection") as ProtectedConfigurationSection);
+            for (var i = 0; i < 20; i++ )
+            {
+                System.Threading.Thread.Sleep(1000);
+                new TestChild.Class1().PortalConosle("Test");
+            }
 
             Console.ReadLine();
         }

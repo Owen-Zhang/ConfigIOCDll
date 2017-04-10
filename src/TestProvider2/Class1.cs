@@ -2,13 +2,13 @@
 using TestDllMain;
 using System.Configuration.Provider;
 
-namespace TestProvider
+namespace TestProvider2
 {
-    public class Class1 : ProviderBase, IPortal 
+    public class Class1 : ProviderBase, IPortal
     {
         public void ConsoleLine(string name)
         {
-            Console.WriteLine(string.Format("TestProvider: {0}",name));
+            Console.WriteLine(string.Format("TestProvider2: {0}", name));
         }
     }
 }

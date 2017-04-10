@@ -15,6 +15,15 @@ namespace TestDllMain
 {
     public class ProviderSection : ConfigurationSection
     {
+        [ConfigurationProperty("default", DefaultValue = "local")]
+        public string DefaultProvider
+        {
+            get
+            {
+                return base["default"] as string;
+            }
+        }
+
         [ConfigurationProperty("providers")]
         public ProviderSettingsCollection Providers
         {

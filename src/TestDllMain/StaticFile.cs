@@ -10,37 +10,20 @@
 //</Description>
 // --------------------------------------------------------------------------------------------------------------------
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 
 namespace TestDllMain
 {
-    public class StaticFile
+    public static class StaticFile
     {
-        //private readonly Dictionary<string, ILog> logs = new Dictionary<string, ILog>();
-        /*
-         public ILog GetLog(string key)
+        public static void ConsoleLine(string name, string providerName = null)
         {
-            using (Locker.ReadRegion(this.SyncRoot))
-            {
-                ILog log;
-                if (!this.logs.TryGetValue(key, out log))
-                {
-                    log = this.CreateLog(key);
-                    this.logs[key] = log;
-                }
-                return log;
-            }
-        }
-            
-         * Cache 
-         */
-        public static void TestImportOtherDllFunction()
-        {
-            var result2 = ConfigurationManager.GetSection("TestSection") as ProviderSection;
-            foreach (ProviderSettings item in result2.Providers)
-            {
-                var obj = (IPortal)Activator.CreateInstance(System.Type.GetType(item.Type))
-            }
+            var portaler = ProviderManager.GetPortal(providerName);
+            if (portaler == null)
+                throw new ArgumentException(string.Format("XXX Config has wrong,  '{0}' desn't find ", providerName));
+
+            portaler.ConsoleLine(name);
         }
     }
 }
